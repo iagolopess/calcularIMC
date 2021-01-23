@@ -12,17 +12,40 @@ header{
 }
 
 header, h1{
-    padding: 5px;
+    padding: 5px 45px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.info-resultados{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F2F0F0;
+    padding: 5px 100px;
+
 }
 
 .texto-explica-imc{
     width: 50%;
-    padding: 15px;
+    padding: 5px;
     text-align: justify;
 }
 
+.imagem-explica img{
+    width: 300px;
+    height: 300px;
+}
+
 .executa-calculo-imc{
-    padding: 20px;
+    padding: 5px;
     width: 400px;
 }
 
@@ -58,7 +81,8 @@ header, h1{
     margin: 5px;
     margin-left: -5px !important;
     border: 2px solid white;
-    width: 80px;
+    width: 100px;
+    height: 30px;
 }
 
 #limpar-info{
@@ -66,15 +90,46 @@ header, h1{
     color: white;
     padding: 5px;
     margin: 5px;
-    margin-left: 25px !important;
+    margin-left: 5px !important;
     border: 2px solid white;
-    width: 80px;
+    width: 100px;
+    height: 30px;
 }
 
 #resultado{
+    font-size: 18px;
     padding-left: 10px;
+    font-weight: bold;
+    padding-top: 30px; 
 }
 
-@media(min-width:1024px){
+.msg-erro{
+    color: red;
+}
+
+@media only screen and (max-width:880px){
+
+    header, h1{
+        padding: 3px 15px;
+
+    }
+
+    .info-resultados{
+        padding: 5px 50px;    
+    }
+
+}
+
+@media only screen and (max-width:768px){
+
+    header, h1{
+        padding: 3px 10px;
+
+    }
+
+    .info-resultados{
+        padding: 2px 30px;
+           
+    }
 
 }

@@ -12,45 +12,76 @@
     />
   </head>
   <body>
-      <header><h1><strong>Calculodora de IMC </strong></h1></header>
+    <header>
+      <h1><strong>Calculodora de IMC </strong></h1>
+    </header>
 
-      <main class="">
-          <div class="texto-explica-imc">
-              <h2>O que é IMC?</h2>
+    <main>
+      <div class="container"></div>
 
-              <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa. O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+      <div class="container">
+        <div class="texto-explica-imc">
+          <h2>O que é IMC?</h2>
 
-              <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo.</p>
-          </div>
+          <p>
+            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+            Organização Mundial de Saúde para calcular o peso ideal de cada
+            pessoa. O índice é calculado da seguinte maneira: divide-se o peso
+            do paciente pela sua altura elevada ao quadrado. Diz-se que o
+            indivíduo tem peso normal quando o resultado do IMC está entre 18,5
+            e 24,9.
+          </p>
 
+          <p>
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos
+            abaixo.
+          </p>
+      
           <div>
-
             <form class="executa-calculo-imc">
-                <div class="formulario">
-                    <div class="info">
-                        <label for="altura">Altura</label>
-                        <input id="altura" name="altura" type="text" placeholder="1,70"> 
-                    </div>
-                    <div class="info">
-                        <label for="peso">Peso em Kg</label>
-                        <input id="peso" name="peso" type="text" placeholder="64,00">
-                    </div>
+              <span class="msg-erro"></span>
+              <div class="formulario">
+                <div class="info">
+                  <label for="altura">Altura</label>
+                  <input
+                    id="altura"
+                    name="altura"
+                    type="text"
+                    placeholder="1,70"
+                  />
                 </div>
-
-                <div class="btn-imc">
-                    <button id="calcula-imc">Calcular</button>
-                    <button id="limpar-info">Limpar</button>
+                <div class="info">
+                  <label for="peso">Peso</label>
+                  <input id="peso" name="peso" type="text" placeholder="64,00" />
                 </div>
+              </div>
 
+              <div class="btn-imc">
+                <button id="calcula-imc">Calcular</button>
+                <button id="limpar-info">Limpar</button>
+              </div>
             </form>
-
-            <span id="resultado"></span>
-
           </div>
 
-      </main>
+        </div>
 
-      <script src="js/app.js"></script>
+        <div class="imagem-explica">
+          <img src="img/obesity.jpg" />
+        </div>
+      </div>
 
+      <div class="info-resultados">
+        <div>
+          <span id="resultado"></span>
+        </div>
+
+        <div>
+          <p>teste alsdajlsdjalskdhlahdlklakshdal</p>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
