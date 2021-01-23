@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header{
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+header, h1{
+    padding: 5px;
+}
+
+.texto-explica-imc{
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+}
+
+.executa-calculo-imc{
+    padding: 20px;
+    width: 400px;
+}
+
+.info{
+    display: inline-block;
+    width: 100px;
+    padding: 0px 5px;
+}
+
+#peso{
+    padding: 5px;
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    width: 80px;
+}
+
+#altura{
+    padding: 5px;
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.btn-imc{
+    display: inline-block;
+    padding: 10px;
+}
+
+#calcula-imc{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    margin-left: -5px !important;
+    border: 2px solid white;
+    width: 80px;
+}
+
+#limpar-info{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 25px !important;
+    border: 2px solid white;
+    width: 80px;
+}
+
+#resultado{
+    padding-left: 10px;
+}
+
+@media(min-width:1024px){
+
+}
