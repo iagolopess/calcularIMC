@@ -35,6 +35,7 @@ function resultadoIMC(imc){
     if(imc < 18.5){
       txtResultado.innerHTML = `Seu IMC deu ${imc} isso siginifica que você está abaixo do ideal`
       document.querySelector("#resultado").style.color = '#ff9100';
+      document.querySelector(".linha-imc1").style.backgroundColor = "ff9100";
     } 
     
     if(imc >= 18.5 && imc <= 24.9){

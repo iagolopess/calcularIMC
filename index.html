@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -13,7 +13,9 @@
   </head>
   <body>
     <header>
+      <div class="titulo">
       <h1><strong>Calculodora de IMC </strong></h1>
+      </div>
     </header>
 
     <main>
@@ -71,12 +73,49 @@
       </div>
 
       <div class="info-resultados">
-        <div>
-          <span id="resultado"></span>
-        </div>
+        
+        <div class="table-imc">
+          <table class="tabela-imc">
+            <thead>
+              <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Grau de obesidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="linha-imc1">
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td>0</td>
+              </tr>
+              <tr class="linha-imc2">
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal</td>
+                <td >0</td>
+              </tr>
+              <tr class="linha-imc3">
+                <td>Entre 25 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td >I</td>
+              </tr>
+              <tr class="linha-imc4">
+                <td>Entre 30 e 39,9</td>
+                <td>Obesidade</td>
+                <td >II</td>
+              </tr>
+              <tr class="linha-imc5">
+                <td>Maior que 40</td>
+                <td>Obesidade Grave</td>
+                <td >III</td>
+              </tr>
+            </tbody>
+          </table>
 
-        <div>
-          <p>teste alsdajlsdjalskdhlahdlklakshdal</p>
+          <div>
+            <span id="resultado"></span>
+          </div>
+
         </div>
 
       </div>
