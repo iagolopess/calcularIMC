@@ -30,8 +30,9 @@ header{
 
 .info-resultados{
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     width: 100%;
-    flex-direction: column;
     background-color: #F2F0F0;
 
 }
@@ -140,7 +141,14 @@ header{
 
 .linha-imc{
     border-bottom: 1px solid gray;
-    background-color: blue;
+}
+
+.dicas-imc{
+    padding: 20px;
+}
+
+.div-dicas{
+    visibility: hidden;
 }
 
 @media only screen and (max-width:880px){
